@@ -1,0 +1,20 @@
+---
+title: "Harwick Building"
+author: "R.L. Rojas"
+date: "May 17, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(leaflet)
+```
+
+
+```{r}
+leaflet() %>% addTiles() %>%
+  addMarkers(lat = 44.021312, lng = -92.467588, 
+  popup = "Harwick Building")
+
+
+```
